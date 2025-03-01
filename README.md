@@ -17,17 +17,29 @@ void cmd_Draw(void) {
 //        arg[4] = (arg[4]/3)*2;
 //    }
     if(arg[0] == 1) DrawLine(arg[1], arg[2], arg[3], arg[4], 1);
+    
     if(arg[0] == 2) DrawBox(arg[1], arg[2], arg[3], arg[4], 0, 1);
+    
     if(arg[0] == 3) DrawBox(arg[1], arg[2], arg[3], arg[4], 1, 1);
+    
     if(arg[0] == 4) DrawCircle(arg[1], arg[2], arg[3], 0, 1, vga ? 1.14 : 1.0);
+    
     if(arg[0] == 5) DrawCircle(arg[1], arg[2], arg[3], 1, 1, vga ? 1.14 : 1.0);
+    
     if(arg[0] == 6) DrawLine(arg[1], arg[2], arg[3], arg[4], 0);
+    
     if(arg[0] == 7) DrawBox(arg[1], arg[2], arg[3], arg[4], 0, 0);
+    
     if(arg[0] == 8) DrawBox(arg[1], arg[2], arg[3], arg[4], 1, 0);
+    
     if(arg[0] == 9) DrawCircle(arg[1], arg[2], arg[3], 0, 0, vga ? 1.14 : 1.0);
+    
     if(arg[0] == 10) DrawCircle(arg[1], arg[2], arg[3], 1, 0, vga ? 1.14 : 1.0);
+    
     if(arg[0] == 11) plot(arg[1], arg[2], 1);
+    
     if(arg[0] == 12) plot(arg[1], arg[2], 0);
+    
 }
 
 
