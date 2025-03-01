@@ -42,10 +42,6 @@ void cmd_Draw(void) {
     
     if(arg[0] == 10) DrawCircle(arg[1], arg[2], arg[3], 1, 0, vga ? 1.14 : 1.0);
     
-    if(arg[0] == 11) plot(arg[1], arg[2], 1);
-    
-    if(arg[0] == 12) plot(arg[1], arg[2], 0);
-    
 }
 
 
@@ -77,11 +73,7 @@ Erase a circle ESC [Z9;<x1>;<y1>;<r>Z
 
 Erase a filled circle ESC [Z10;<x1>;<y1>;<r>Z
 
-Additional added escape code: (Graphics Patch 2022 John Galt) 
-
-Draw a Pixel ESC [Z11;<x1>;<y1>Z
-
-Erase a Pixel ESC [Z12;<x1>;<y1>Z
+If you want to control a single pixel just use the Draw and line and Erase a line escape code and set the start and end points to the same location.
 
 originally you could do the same as drawing a one pixel line and deleteing a one pixel line
 but it was felt to add a escape code just for one pixel draw and erase.
