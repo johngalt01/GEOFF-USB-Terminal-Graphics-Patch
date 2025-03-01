@@ -11,11 +11,17 @@ This indicates additional Graphics Escape codes as shown below.
 the original code of the Geoff as altered here :
 
 // draw graphics
+
 void cmd_Draw(void) {
+
 //    if(Display24Lines) {
+
 //        arg[2] = (arg[2]/3)*2;
+
 //        arg[4] = (arg[4]/3)*2;
+
 //    }
+
     if(arg[0] == 1) DrawLine(arg[1], arg[2], arg[3], arg[4], 1);
     
     if(arg[0] == 2) DrawBox(arg[1], arg[2], arg[3], arg[4], 0, 1);
