@@ -56,22 +56,31 @@ the original GEOFF terminal graphics could only draw to the screen not delete.
 The basic original escape codes are:
 
 Draw a line ESC [Z1;<x1>;<y1>;<x2>;<y2>Z
+
 Draw a box ESC [Z2;<x1>;<y1>;<x2>;<y2>Z
+
 Draw a filled box ESC [Z3;<x1>;<y1>;<x2>;<y2>Z
+
 Draw a circle ESC [Z4;<x1>;<y1>;<r>Z
+
 Draw a filled circle ESC [Z5;<x1>;<y1>;<r>Z
 
 Extended escape codes to erase the above: (Graphics Patch 2022 John Galt)
 
 Erase a line ESC [Z6;<x1>;<y1>;<x2>;<y2>Z
+
 Erase a box ESC [Z7;<x1>;<y1>;<x2>;<y2>Z
+
 Erase a filled box ESC [Z8;<x1>;<y1>;<x2>;<y2>Z
+
 Erase a circle ESC [Z9;<x1>;<y1>;<r>Z
+
 Erase a filled circle ESC [Z10;<x1>;<y1>;<r>Z
 
 Additional added escape code: (Graphics Patch 2022 John Galt) 
 
 Draw a Pixel ESC [Z11;<x1>;<y1>Z
+
 Erase a Pixel ESC [Z12;<x1>;<y1>Z
 
 originally you could do the same as drawing a one pixel line and deleteing a one pixel line
