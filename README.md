@@ -77,3 +77,10 @@ If you want to control a single pixel just use the Draw and line and Erase a lin
 
 originally you could do the same as drawing a one pixel line and deleteing a one pixel line
 but it was felt to add a escape code just for one pixel draw and erase.
+
+
+
+GCLOCK.BAS is a program that creates a Real time clock display if you have a RTC card for the I/O BUS
+The GEOFF terminal aspect ratio is all goofy, use in 36 line mode.
+![DSCN6327](https://github.com/user-attachments/assets/c5ebee06-e94c-42d2-8ceb-8b7017abae03)
+
